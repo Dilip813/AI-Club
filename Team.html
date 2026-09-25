@@ -218,6 +218,9 @@
             display: flex;
             gap: 30px;
             align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-link {
@@ -231,21 +234,25 @@
             align-items: center;
             gap: 8px;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .nav-link i {
             font-size: 0.9rem;
         }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gradient-primary);
-            transition: var(--transition-normal);
+        .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--dark-light);
+            padding: 8px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            text-decoration: none;
         }
 
         .nav-link:hover,
@@ -261,6 +268,7 @@
         .nav-join-btn {
             padding: 10px 24px;
             font-size: 0.9rem;
+            text-decoration: none;
         }
 
         /* Mobile Toggle */
@@ -363,6 +371,11 @@
             align-items: center;
             justify-content: center;
             box-shadow: var(--shadow-md);
+        }
+
+        .hero-buttons a,
+        .hero-buttons button {
+            text-decoration: none;
         }
 
         .back-to-top.visible {
@@ -471,6 +484,11 @@
             border-color: var(--primary-color);
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
+        }
+
+        .footer-links a,
+        .footer-social a {
+            text-decoration: none;
         }
 
         /* Team Grid */
@@ -1136,7 +1154,7 @@
                     </div>
                 </a>
             </div>
-            
+
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="toggle-line"></span>
                 <span class="toggle-line"></span>
